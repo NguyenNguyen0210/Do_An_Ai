@@ -79,7 +79,7 @@ Mỗi khi khởi động hoặc ấn **Game Mới (R)**, trò chơi sẽ trình 
 * **1. DFS (Depth-First Search):** Áp dụng Recursive Backtracker đục tường mê cung ngẫu nhiên liên thông (kèm bước phá 15% tường tạo đa lối đi). Trực quan hóa bằng tia sét `⚡`.
 <video src="https://github.com/user-attachments/assets/33942147-bd98-4282-a30c-819076379bc9" controls muted style="max-width: 100%;"></video>
 * **2. BFS (Breadth-First Search):** Loang chiều rộng tính toán **Trường khoảng cách** từ Lối ra `🚪` tới mọi ô trống trên bản đồ theo thời gian thực.
-<img width="1106" height="555" alt="image" src="https://github.com/user-attachments/assets/ea1c72fc-fd9b-4661-9c90-682a30c1f582" />
+<img width="700" alt="Belief State" src="https://github.com/user-attachments/assets/ea1c72fc-fd9b-4661-9c90-682a30c1f582" />
 
 ### Nhóm 2: Tìm kiếm có thông tin (Informed / Heuristic Search)
 * **3. A\* Search:** Điều khiển **Bảo vệ A*** và **Stalker** tìm đường đuổi bắt tối ưu qua hàm đánh giá $f(n) = g(n) + h(n)$ (biết chủ động đi vòng né ô Bùn `🐾`).

@@ -82,6 +82,7 @@ Mỗi khi khởi động hoặc ấn **Game Mới (R)**, trò chơi sẽ trình 
 
 ### Nhóm 2: Tìm kiếm có thông tin (Informed / Heuristic Search)
 * **3. A\* Search:** Điều khiển **Bảo vệ A*** và **Stalker** tìm đường đuổi bắt tối ưu qua hàm đánh giá $f(n) = g(n) + h(n)$ (biết chủ động đi vòng né ô Bùn `🐾`).
+<video src="https://github.com/user-attachments/assets/9dc03160-9275-4d21-be61-669101e8e2dc" controls muted style="max-width: 100%;"></video>
 * **4. Greedy Best-First Search:** Điều khiển **Bảo vệ Greedy** nhắm thẳng hướng Robot bằng hàm heuristic $h(n)$ (Khoảng cách Manhattan).
 
 ### Nhóm 3: Tìm kiếm cục bộ (Local Search)

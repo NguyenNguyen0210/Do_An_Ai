@@ -10,7 +10,7 @@ Giao diện trò chơi được tối ưu hóa theo phong cách tối giản hi�
 
 Mã nguồn được phân tách theo mô hình phát triển phần mềm chuyên nghiệp:
 * 📄 **game_models.py**: Chứa các định nghĩa cấu trúc dữ liệu trò chơi (`GridMap`, `TicTacToe`, `MapColoringCSP`).
-* 📄 **algorithms.py**: Chứa mã nguồn của cả 12 thuật toán AI và cơ chế tối ưu hóa A* Cache.
+* 📄 **algorithms.py**: Chứa mã nguồn của cả 12 thuật toán AI
 * 📄 **main.py**: File chạy chính, xử lý giao diện đồ họa PyQt5, vẽ lưới mê cung, các cửa sổ phân tích AI và game loop.
 
 ---

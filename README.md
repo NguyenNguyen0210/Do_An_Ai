@@ -76,32 +76,72 @@ Mỗi khi khởi động hoặc ấn **Game Mới (R)**, trò chơi sẽ trình 
 ## 🧠 4. Cách Áp dụng 12 Thuật toán AI trong Game
 
 ### Nhóm 1: Tìm kiếm không có thông tin (Uninformed Search)
+
 * **1. DFS (Depth-First Search):** Áp dụng Recursive Backtracker đục tường mê cung ngẫu nhiên liên thông (kèm bước phá 15% tường tạo đa lối đi). Trực quan hóa bằng tia sét `⚡`.
-<video src="https://github.com/user-attachments/assets/33942147-bd98-4282-a30c-819076379bc9" controls muted style="max-width: 100%;"></video>
+
+  <video src="https://github.com/user-attachments/assets/33942147-bd98-4282-a30c-819076379bc9" controls muted width="700"></video>
+
 * **2. BFS (Breadth-First Search):** Loang chiều rộng tính toán **Trường khoảng cách** từ Lối ra `🚪` tới mọi ô trống trên bản đồ theo thời gian thực.
-<img width="700" alt="Belief State" src="https://github.com/user-attachments/assets/ea1c72fc-fd9b-4661-9c90-682a30c1f582" />
+
+  <img width="700" alt="BFS Distance Field" src="https://github.com/user-attachments/assets/ea1c72fc-fd9b-4661-9c90-682a30c1f582" />
+
+---
+
 ### Nhóm 2: Tìm kiếm có thông tin (Informed / Heuristic Search)
-* **3. A\* Search:** Điều khiển **Bảo vệ A*** và **Stalker** tìm đường đuổi bắt tối ưu qua hàm đánh giá $f(n) = g(n) + h(n)$ (biết chủ động đi vòng né ô Bùn `🐾`).
-<video src="https://github.com/user-attachments/assets/9dc03160-9275-4d21-be61-669101e8e2dc" controls muted style="max-width: 100%;"></video>
+
+* **3. A\* Search:** Điều khiển **Bảo vệ A*** và **Stalker** tìm đường đuổi bắt tối ưu qua hàm đánh giá $f(n)=g(n)+h(n)$ (biết chủ động đi vòng né ô Bùn `🐾`).
+
+  <video src="https://github.com/user-attachments/assets/9dc03160-9275-4d21-be61-669101e8e2dc" controls muted width="700"></video>
+
 * **4. Greedy Best-First Search:** Điều khiển **Bảo vệ Greedy** nhắm thẳng hướng Robot bằng hàm heuristic $h(n)$ (Khoảng cách Manhattan).
-<video src="https://github.com/user-attachments/assets/bfa48ed0-15db-4174-9a44-795305c10f74" controls muted style="max-width: 100%;"></video>
+
+  <video src="https://github.com/user-attachments/assets/bfa48ed0-15db-4174-9a44-795305c10f74" controls muted width="700"></video>
+
+---
+
 ### Nhóm 3: Tìm kiếm cục bộ (Local Search)
+
 * **5. Simple Hill Climbing:** Leo đồi cơ bản chọn nước đi tốt hơn đầu tiên để vận hành tính năng **Đi Tự Động (Auto-Step)**.
-* <img width="700" alt="Simple Hill Climbing" src="https://github.com/user-attachments/assets/78f3c7ac-cde0-44f0-937c-8691d5564300" />
+
+  <img width="700" alt="Simple Hill Climbing" src="https://github.com/user-attachments/assets/78f3c7ac-cde0-44f0-937c-8691d5564300" />
+
 * **6. Steepest-Ascent Hill Climbing:** Leo đồi dốc đứng duyệt toàn bộ hàng xóm để vẽ ra **Lộ trình GPS** tối ưu nhất (chuỗi mũi tên Neon Sci-Fi Cyan `▲▼◄►`).
-<video src="https://github.com/user-attachments/assets/8c639506-b5cd-43e1-bddb-9b0eb5abd911" controls muted style="max-width: 100%;"></video>
+
+  <video src="https://github.com/user-attachments/assets/8c639506-b5cd-43e1-bddb-9b0eb5abd911" controls muted width="700"></video>
+
+---
+
 ### Nhóm 4: Tìm kiếm trong môi trường phức tạp (Complex Environments)
+
 * **7. Sensorless / Belief State Tracking:** Vận hành bộ não cho Stalker `👻` (Agent mù). Duy trì và cập nhật tập Niềm tin (Belief State) qua phương trình Predict + Observe dựa trên cảm biến ngửi mùi bán kính 3 ô.
-<video src="https://github.com/user-attachments/assets/1dbfc4da-85b5-47b6-97fa-5b45eeab398f" controls muted style="max-width: 100%;"></video>
+
+  <video src="https://github.com/user-attachments/assets/1dbfc4da-85b5-47b6-97fa-5b45eeab398f" controls muted width="700"></video>
+
 * **8. AND-OR Graph Search:** Tìm kiếm kế hoạch dự phòng (Contingency Plan) trong môi trường không tất định (trượt ngã trên ô Băng 50%). Trực quan hóa bằng Cây quyết định tương tác highlight ô mê cung.
-<video src="https://github.com/user-attachments/assets/24e65d52-baaa-4845-9fb5-ad33639ff08a" controls muted style="max-width: 100%;"></video>
+
+  <video src="https://github.com/user-attachments/assets/24e65d52-baaa-4845-9fb5-ad33639ff08a" controls muted width="700"></video>
+
+---
+
 ### Nhóm 5: Bài toán thỏa mãn ràng buộc (CSP)
+
 * **9. Min-Conflicts (Local Search CSP):** Vận hành khi **Khởi tạo Game mới**. Trực quan hóa từng bước gán màu ngẫu nhiên ban đầu cho 6 vùng an toàn và tự động sửa đổi các mâu thuẫn màu giáp ranh.
-<video src="https://github.com/user-attachments/assets/e8718948-8dda-4d34-a42d-8277f43e4be1" controls muted style="max-width: 100%;"></video>
+
+  <video src="https://github.com/user-attachments/assets/e8718948-8dda-4d34-a42d-8277f43e4be1" controls muted width="700"></video>
+
 * **10. Backtracking Search:** Vận hành khi **Mất 1 Mạng sống**. Chạy đệ quy quay lui (kết hợp Heuristic MRV) để tái cấu trúc lại màu sắc các vùng an toàn từ đầu, đồng thời biến phân vùng ngay tại vị trí Robot đang đứng thành Vùng Lục 🟢 an toàn.
-<video src="https://github.com/user-attachments/assets/76cc8b3f-3ab4-4f0c-bbf6-935c0a5af352" controls muted style="max-width: 100%;"></video>
+
+  <video src="https://github.com/user-attachments/assets/76cc8b3f-3ab4-4f0c-bbf6-935c0a5af352" controls muted width="700"></video>
+
+---
+
 ### Nhóm 6: Tìm kiếm đối kháng (Adversarial Search)
+
 * **11. Minimax:** Vận hành bộ não AI cho đối thủ trong màn đấu trí Caro 3x3 khi đụng độ Bảo vệ Greedy (duyệt toàn bộ $9!$ trạng thái).
-<video src="https://github.com/user-attachments/assets/9fc4b2f4-8f77-4144-a0eb-42626478c715" controls muted style="max-width: 100%;"></video>
-* **12. Alpha-Beta Pruning:** Vận hành trí tuệ nhân tạo mức độ khó cao nhất (cắt tỉa nhánh thừa $\alpha, \beta$) khi đụng độ Bảo vệ A* và Stalker.
-<video src="https://github.com/user-attachments/assets/8910bcbd-a2d6-4322-a28c-4a803932cad7" controls muted style="max-width: 100%;"></video>
+
+  <video src="https://github.com/user-attachments/assets/9fc4b2f4-8f77-4144-a0eb-42626478c715" controls muted width="700"></video>
+
+* **12. Alpha-Beta Pruning:** Vận hành trí tuệ nhân tạo mức độ khó cao nhất (cắt tỉa nhánh thừa $\alpha,\beta$) khi đụng độ Bảo vệ A* và Stalker.
+
+  <video src="https://github.com/user-attachments/assets/8910bcbd-a2d6-4322-a28c-4a803932cad7" controls muted width="700"></video>
+

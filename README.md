@@ -102,12 +102,12 @@ Mỗi khi khởi động hoặc ấn **Game Mới (R)**, trò chơi sẽ trình 
 ### Nhóm 3: Tìm kiếm cục bộ (Local Search)
 
 * **5. Simple Hill Climbing:** Leo đồi cơ bản chọn nước đi tốt hơn đầu tiên để vận hành tính năng **Đi Tự Động (Auto-Step)**.
+  <video src="https://github.com/user-attachments/assets/8c639506-b5cd-43e1-bddb-9b0eb5abd911" controls muted width="700"></video>
 
-  <img width="700" alt="Simple Hill Climbing" src="https://github.com/user-attachments/assets/78f3c7ac-cde0-44f0-937c-8691d5564300" />
 
 * **6. Steepest-Ascent Hill Climbing:** Leo đồi dốc đứng duyệt toàn bộ hàng xóm để vẽ ra **Lộ trình GPS** tối ưu nhất (chuỗi mũi tên Neon Sci-Fi Cyan `▲▼◄►`).
 
-  <video src="https://github.com/user-attachments/assets/8c639506-b5cd-43e1-bddb-9b0eb5abd911" controls muted width="700"></video>
+  <img width="700" alt="Simple Hill Climbing" src="https://github.com/user-attachments/assets/78f3c7ac-cde0-44f0-937c-8691d5564300" />
 
 ---
 

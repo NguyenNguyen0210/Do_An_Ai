@@ -77,6 +77,7 @@ Mỗi khi khởi động hoặc ấn **Game Mới (R)**, trò chơi sẽ trình 
 
 ### Nhóm 1: Tìm kiếm không có thông tin (Uninformed Search)
 * **1. DFS (Depth-First Search):** Áp dụng Recursive Backtracker đục tường mê cung ngẫu nhiên liên thông (kèm bước phá 15% tường tạo đa lối đi). Trực quan hóa bằng tia sét `⚡`.
+<video src="https://github.com/user-attachments/assets/66764516-7ab2-4b66-8deb-68655cc41cce" controls muted style="max-width: 100%;"></video>
 * **2. BFS (Breadth-First Search):** Loang chiều rộng tính toán **Trường khoảng cách** từ Lối ra `🚪` tới mọi ô trống trên bản đồ theo thời gian thực.
 
 ### Nhóm 2: Tìm kiếm có thông tin (Informed / Heuristic Search)
